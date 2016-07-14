@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cari Arsitek</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/angucomplete.css">
+  <link rel="stylesheet" href="assets/css/architect.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+
+  <!--JS-->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body data-spy="scroll">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#home">
+          CariArsitek
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a class="page-scroll" href="#home"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Cari Arsitek?</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#findProject">Cari Proyek?</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#steps">Cara Kerja</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#register">Daftar</a>
+          </li>
+          <li>
+            <a ng-controller="LoginModalController" href="" ng-click="open()">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div ng-view></div>
+
+  <div>
+    <script type="text/ng-template" id="myModalContent.html">
+      <div class="loginmodal-container">
+        <h1>Login to Your Account</h1><br>
+        <form>
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+
+        </form>
+
+        <div class="login-help">
+          <a href="#">Forgot Password</a>
+        </div>
+      </div>
+    </script>
+  </div>
+
+  <div id="fh5co-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 to-animate">
+          <h3 class="section-title">About Us</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+          <p class="copy-right">&copy; 2015 Union Free Template. <br>All Rights Reserved. <br>
+            Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a>
+            Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a> &amp; Dribbble Image by <a href="https://dribbble.com/tibi_neamu" target="_blank">Tiberiu</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 to-animate">
+          <h3 class="section-title">Our Address</h3>
+          <ul class="contact-info">
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+            <li><i class="fa fa-mobile" aria-hidden="true"></i>+ 1235 2355 98</li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">info@yoursite.com</a></li>
+            <li><i class="fa fa-globe" aria-hidden="true"></i><a href="#">www.yoursite.com</a></li>
+          </ul>
+          <h3 class="section-title">Connect with Us</h3>
+          <ul class="social-media">
+            <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 to-animate">
+          <h3 class="section-title">Drop us a line</h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="sr-only">Name</label>
+              <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <!-- Framework -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+
+
+  <!-- Custom Angular -->
+  <script src="app.js"></script>
+  <script src="home/homeController.js"></script>
+  <script src="home/homeService.js"></script>
+
+  <!-- Custom Non-Angular -->
+  <script src="assets/js/angular-css.min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/cbpAnimatedHeader.js"></script>
+  <script src="assets/js/architect.js"></script>
+  <script src="assets/js/angucomplete.js"></script>
+  <script src="assets/js/loginModal.js"></script>
+</body>
+</html>
