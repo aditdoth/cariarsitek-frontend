@@ -1,4 +1,4 @@
-# Tech : AngularJS
+# Tech : AngularJS, HTML
 
 ## Contact
 
