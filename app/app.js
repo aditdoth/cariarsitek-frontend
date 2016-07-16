@@ -17,6 +17,10 @@ app.config(function($routeProvider) {
         controller: 'loginPageController',
         templateUrl : "login/login.html"
       })
+      .when("/submitProject", {
+          controller: 'submitProjectPageController',
+          templateUrl : "submitProject/submitProject.html"
+      })
       .otherwise({
         redirectTo : "/"
       })

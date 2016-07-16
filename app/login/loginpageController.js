@@ -3,5 +3,5 @@
  */
 
 app.controller('loginPageController', function loginPageController() {
-
+    console.log("loginPageController initiated");
 });

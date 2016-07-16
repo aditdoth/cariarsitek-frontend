@@ -3,7 +3,9 @@
  */
 
 app.controller('homeController',
-    function homeController($scope, homeServices) {
+    function homeController($scope, homeServices, $location) {
+        console.log("homeController initiated");
+
         homeServices.getHomeTypes().then(function(data) {
             $scope.homeTypes = data;
         });
@@ -15,5 +17,9 @@ app.controller('homeController',
         homeServices.getProvince().then(function(data) {
             $scope.provinces = data;
         });
+
+        $scope.submitDraftProject = function() {
+            $location.path('/submitProject');
+        }
 
     });

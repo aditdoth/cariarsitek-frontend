@@ -3,5 +3,5 @@
  */
 
 app.controller('registerPageController', function registerPageController() {
-
+    console.log("registerPageController initiated");
 });

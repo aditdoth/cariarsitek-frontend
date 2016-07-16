@@ -71,19 +71,19 @@
   <div>
     <script type="text/ng-template" id="myModalContent.html">
       <div class="loginmodal-container">
-        <h1>Login to Your Account</h1><br>
+        <h2>Login</h2><br>
         <form>
-          <input type="text" name="user" placeholder="Username">
-          <input type="password" name="pass" placeholder="Password">
+          <input type="text" name="user" class="control-label" placeholder="Username">
+          <input type="password" name="pass" class="control-label" placeholder="Password">
           <div class="checkbox">
             <label>
               <input type="checkbox"> Remember me
             </label>
           </div>
-          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+          <button class="btn btn-xl btn-block">Masuk</button>
 
         </form>
-
+        <br>
         <div class="login-help">
           <a href="#">Forgot Password</a>
         </div>
@@ -159,6 +159,9 @@
   <script src="app.js"></script>
   <script src="home/homeController.js"></script>
   <script src="home/homeService.js"></script>
+  <script src="login/loginpageController.js"></script>
+  <script src="register/registerpageController.js"></script>
+  <script src="submitProject/submitProjectPageController.js"></script>
 
   <!-- Custom Non-Angular -->
   <script src="assets/js/angular-css.min.js"></script>
