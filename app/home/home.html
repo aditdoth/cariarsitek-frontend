@@ -6,10 +6,12 @@
                 <form>
                     <div class="col-xs-3 input-padding">
                         <select class="form-control input-lg" ng-model="selectedType" ng-options="x.type for x in homeTypes">
+                            <option value="" disabled selected>Type Rumah</option>
                         </select>
                     </div>
                     <div class="col-xs-3 input-padding">
                         <select class="form-control input-lg" ng-model="selectedWidth" ng-options="x.width for x in buildingWidth">
+                            <option value="" disabled selected>Luas Tanah</option>
                         </select>
                     </div>
                     <div class="col-xs-4 input-padding">
@@ -24,7 +26,8 @@
                                       inputclass="form-control input-lg"></angucomplete>
                     </div>
                     <div class="col-xs-5 input-padding">
-                        <button class="btn btn-xl btn-block btn-primary" type="button">Cari Arsitek</button>
+                        <button class="btn btn-xl btn-block btn-primary"
+                                type="button" ng-click="findArchitect()">Cari Arsitek</button>
                     </div>
                     <div class="col-xs-5 input-padding">
                         <button class="btn btn-xl btn-block btn-primary"
@@ -142,8 +145,6 @@
                 </a>
             </div>
         </div>
-
-
     </div>
 </section>
 

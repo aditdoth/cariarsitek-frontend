@@ -20,6 +20,10 @@ app.controller('homeController',
 
         $scope.submitDraftProject = function() {
             $location.path('/submitProject');
-        }
+        };
+
+        $scope.findArchitect = function() {
+            $location.path('/findArchitect');
+        };
 
     });

@@ -21,9 +21,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+  <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 
   <!--JS-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 
 <body data-spy="scroll">
@@ -151,17 +156,17 @@
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
-
 
   <!-- Custom Angular -->
   <script src="app.js"></script>
   <script src="home/homeController.js"></script>
   <script src="home/homeService.js"></script>
-  <script src="login/loginpageController.js"></script>
-  <script src="register/registerpageController.js"></script>
-  <script src="submitProject/submitProjectPageController.js"></script>
+  <script src="login/loginController.js"></script>
+  <script src="register/registerController.js"></script>
+  <script src="submitProject/submitProjectController.js"></script>
+  <script src="findArchitect/findArchitectController.js"></script>
+  <script src="profileArchitect/profileArchitectController.js"></script>
 
   <!-- Custom Non-Angular -->
   <script src="assets/js/angular-css.min.js"></script>
@@ -170,5 +175,6 @@
   <script src="assets/js/architect.js"></script>
   <script src="assets/js/angucomplete.js"></script>
   <script src="assets/js/loginModal.js"></script>
+
 </body>
 </html>

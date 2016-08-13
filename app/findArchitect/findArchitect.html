@@ -1,0 +1,253 @@
+<section id="findArchitect" class="default_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-center">
+                <h3>Temukan Arsitek Impianmu</h3>
+                <form class="form-horizontal panel-body" action="" method="POST">
+                    <fieldset>
+                        <div class="control-group col-xs-3 input-padding">
+                            <label class="control-label">Jenis / type rumah</label>
+                            <div>
+                                <select class="form-control input-md" ng-model="selectedType" ng-options="x.type for x in homeTypes">
+                                    <option value="" disabled selected>Type Rumah</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="control-group col-xs-3 input-padding">
+                            <label class="control-label">Lokasi</label>
+                            <div>
+                                <angucomplete id="ex1"
+                                              placeholder="Lokasi"
+                                              pause="100"
+                                              selectedobject="selectedProvince"
+                                              localdata="provinces"
+                                              searchfields="province"
+                                              titlefield="province"
+                                              minlength="1"
+                                              inputclass="form-control input-md"></angucomplete>
+                            </div>
+                        </div>
+                        <div class="control-group col-xs-6 input-padding">
+                            <label class="control-label">Kata Kunci</label>
+                            <div class="input-group">
+                                <input type="text" id="keyword" name="keyword" class="form-control input-md" placeholder="e.g. ruang tamu, kamar tidur">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="listArchitect">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-center">
+                <fieldset class="panel-body" >
+                    <div class="control-group col-xs-9 input-padding"></div>
+                    <div class="control-group col-xs-3 input-padding">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                    Urutkan
+                            </span>
+                            <select class="form-control input-md">
+                                <option value="Rating">Rating</option>
+                                <option value="Harga">Harga</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <ul>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person2.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/1.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/2.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/portfolio/3.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block"
+                                style="border-radius: 0" ng-click="showProfileArchitect()">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person2.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/3.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/4.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/portfolio/5.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block" style="border-radius: 0">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person3.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/person2.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block" style="border-radius: 0">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person2.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/person2.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block" style="border-radius: 0">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person2.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/person2.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/person2.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block" style="border-radius: 0">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+
+                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 m-b-lg">
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray">
+                        <img class="pull-left" src="assets/img/person2.jpg" alt="user">
+                        <div class="padding-alt">
+                            <span><b>Pradhany Widtyan Indrarama</b></span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-star text-warning-alt"></span>&nbsp;&nbsp;<span class="label label-warning font-100">4 / 5</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-map-marker text-info-alt"></span>&nbsp;&nbsp;<span>Jakarta</span>
+                        </div>
+                        <div class="padding-alt-2">
+                            <span class="fa fa-money text-success-alt"></span>&nbsp;<span>20.000</span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-md pad-b-sm pos-rlt clearfix font-size-14 bg-light-gray" style="padding-left: 30px;">
+                        <h4 style="margin-top: 0;">Portofolio Terbaik</h4>
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/1.jpg" alt="user">
+                        <img class="pull-left thumportofolio" src="assets/img/portfolio/2.jpg" alt="user">
+                        <img style="margin-right: 0;" src="assets/img/portfolio/3.jpg" alt="user">
+                    </div>
+                    <div class="col-sm-6 pull-left no-padding">
+                        <button type="button" class="btn btn-success btn-outline btn-block" style="border-radius: 0">Lihat</button>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                        <button type="button" class="btn btn-info btn-outline btn-block" style="border-radius: 0">Pilih</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

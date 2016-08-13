@@ -30,12 +30,7 @@ app.controller('LoginModalController', function ($scope, $uibModal, $log) {
 // Please note that $uibModalInstance represents a modal window (instance) dependency.
 // It is not the same as the $uibModal service used above.
 
-app.controller('InstanceModalController', function ($scope, $uibModalInstance, items) {
-
-    $scope.items = items;
-    $scope.selected = {
-        item: $scope.items[0]
-    };
+app.controller('InstanceModalController', function ($scope, $uibModalInstance) {
 
     $scope.ok = function () {
         $uibModalInstance.close($scope.selected.item);

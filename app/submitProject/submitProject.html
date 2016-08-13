@@ -47,16 +47,27 @@
                                         <textarea id="description" name="description" rows="6" class="form-control"></textarea>
                                     </div>
                                 </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="accountType">Daftar Sebagai</label>
-                                    <div class="controls">
-                                        <select type="password" id="accountType" name="accountType" placeholder="" class="form-control input-lg">
-                                            <option value="customer" selected>Customer</option>
-                                            <option value="architect">Arsitek</option>
-                                        </select>
+                                <div class="control-group col-xs-12 input-padding">
+                                    <label class="control-label" for="uploadFile">Upload File</label>
+                                    <div>
+                                        <input type="file" id="uploadFile" name="uploadFile" class="form-control input-lg">
                                     </div>
                                 </div>
-
+                                <div class="control-group col-xs-6 input-padding">
+                                    <label class="control-label" for="expDate">Expiration Date</label>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type="text" id="expDate" name="expDate" class="form-control input-lg">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="control-group col-xs-6 input-padding" style="padding-bottom: 20px;">
+                                    <label class="control-label" for="budget">Budget</label>
+                                    <div>
+                                        <input type="text" id="budget" name="budget" class="form-control input-lg">
+                                    </div>
+                                </div>
                                 <div class="control-group">
                                     <!-- Button -->
                                     <div class="controls" style="padding-top: 20px">
@@ -71,3 +82,8 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>

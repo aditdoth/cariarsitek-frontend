@@ -676,7 +676,173 @@ fieldset[disabled] .btn-xl.active {
 
 }
 
+.default_form h3 {
+    margin: 0 0 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+
+}
+
 .default_form .panel-body {
     padding: 15px;
 }
 /**************************** Section | Register  ****************************/
+
+#listArchitect {
+    padding-bottom: 70px;
+    padding-top: 0;
+}
+
+#listArchitect ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pad-b-sm {
+    padding-bottom: 10px;
+}
+
+.pad-l-md {
+    padding-left: 30px;
+}
+
+.wrapper-md {
+    padding: 20px;
+}
+
+.pos-rlt {
+    position: relative;
+}
+
+.wrap-list-architect {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper-md img {
+    width:90px;
+    height:90px;
+    margin-right: 20px;
+}
+
+/************************** Custom Button *************************/
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+/************************** Custom Button *************************/
+
+#listArchitect .font-size-14 {
+    font-size: 14px;
+}
+
+#listArchitect .padding-alt {
+     padding-bottom: 5px;
+ }
+#listArchitect .padding-alt-2 {
+    padding-bottom: 3px;
+}
+
+#listArchitect .font-100 {
+    font-size: 90%;
+}
+
+
+
+.text-warning-alt {
+    color: #fad46b;
+}
+
+
+.text-info-alt {
+    color: #7ed4ec;
+}
+
+.text-success-alt {
+    color: #3bec2a;
+}
+
+.list-prop {
+    /*background-color: #ece9e9;*/
+    padding-left: 0;
+    padding-right: 0;
+
+    /*margin: 2px 2px 2px 2px;*/
+}
+
+.no-padding {
+    padding: 0 0 0 0;
+}
+
+.no-margin {
+    margin: 0 0 0 0;
+}
+
+.wrapper-md .thumportofolio {
+    width:90px;
+    height:90px;
+    margin-right: 15px;
+}
+
+.wrapper-md .thumportofolio-2 {
+    width:90px;
+    height:90px;
+    margin-right: 0;
+}
+
+.m-b-lg {
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.no-border {
+    border: 0;
+}
+
+.border-dsb-curve {
+    border: solid 1px deepskyblue;
+    border-radius: 4px;
+}
+
+/**************************** Section | Profile Architect  ****************************/
+
+.avatar-img img {
+    width:180px;
+    height:180px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
